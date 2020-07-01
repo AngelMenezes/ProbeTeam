@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ProbeTeamApp.Views.Scout.EditScoutPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry x:Name="EntryTypeOfScout" Placeholder="Type the product Type Of Scout" HorizontalOptions="FillAndExpand" />
+            <Entry x:Name="EntryLocality" Placeholder="Type the product Locality" HorizontalOptions="FillAndExpand" />
+            <Entry x:Name="EntryQuantityInField" Placeholder="Type the product Quantity In Field" HorizontalOptions="FillAndExpand" />
+            <Entry x:Name="EntryScoutRegistrationDate" Placeholder="Type the product Scout Registration Date" HorizontalOptions="FillAndExpand" />
+            <StackLayout Orientation="Horizontal" Spacing="30" HorizontalOptions="CenterAndExpand">
+                <Button x:Name="BtnUpdate" Text="Update" Clicked="BtnUpdate_Clicked" />
+                <Button x:Name="BtnCancel" Text="Cancel" Clicked="BtnCancel_Clicked" />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
